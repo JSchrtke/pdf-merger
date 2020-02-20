@@ -70,7 +70,7 @@ if __name__ == "__main__":
 
     while not is_ordered(pdf_list):
         pdf_list.order()
-    
+
     output_name = input("Enter name for the ouput file:\n")
     output_file = os.path.join(path_to_pdfs, f"{output_name}.pdf")
     merge(pdf_list, output_file)
